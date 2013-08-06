@@ -1,0 +1,580 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Curtis CSS Typeface</title>
+
+  <link rel="stylesheet" href="curtis.css" />
+
+</head>
+<body>
+
+
+<div id="content">
+
+  <h1 class="curtis size56 standard clearfix">
+      <span class="word"><span class="css_char c">C<span class="stroke"></span><span class="neg"></span></span><span class="css_char u">U<span class="stroke"></span></span><span class="css_char r">R<span class="inside split_vert"></span><span class="outside split_vert"></span><span class="stroke"></span><span class="fill"></span></span><span class="css_char t">T<span class="stem fill"></span><span class="cross fill"></span></span><span class="css_char i">I<span class="fill"></span></span><span class="css_char s">S<span class="bottom_circle stroke"></span><span class="left neg"></span><span class="top_circle stroke"></span><span class="right neg"><span class="stroke"></span></span></span></span>
+      <span class="word"><span class="css_char c">C<span class="stroke"></span><span class="neg"></span></span><span class="css_char s">S<span class="bottom_circle stroke"></span><span class="left neg"></span><span class="top_circle stroke"></span><span class="right neg"><span class="stroke"></span></span></span><span class="css_char s">S<span class="bottom_circle stroke"></span><span class="left neg"></span><span class="top_circle stroke"></span><span class="right neg"><span class="stroke"></span></span></span></span>
+      <span class="word"><span class="css_char t">T<span class="stem fill"></span><span class="cross fill"></span></span><span class="css_char y">Y<span class="outside split_vert"></span><span class="inside split_horiz"></span><span class="fill"></span></span><span class="css_char p">P<span class="stroke"></span><span class="fill"></span></span><span class="css_char e">E<span class="stroke"></span><span class="fill"></span></span><span class="css_char f">F<span class="stroke"></span><span class="fill"></span></span><span class="css_char a">A<span class="outside split_vert"></span><span class="inside split_horiz"></span><span class="bar fill"></span></span><span class="css_char c">C<span class="stroke"></span><span class="neg"></span></span><span class="css_char e">E<span class="stroke"></span><span class="fill"></span></span></span>
+  </h1>
+
+  <div id="copy" class="tk_proxima_nova">
+    <p>
+      Curtis is the name I&rsquo;ve given for a family of geometric sans-serif fonts currently in development.  Other incarnations exist as Fontstructions: <a href="http://fontstruct.fontshop.com/fontstructions/show/180805">Curtis Heavy</a> and <a href="http://fontstruct.fontshop.com/fontstructions/show/curtis_pixel_14">Curtis Pixel 14</a>.  This version takes form in CSS.  All shapes are rendered by the browser, using a combination of background color, border width, border radius, and a heavily reliance on absolute/relative positioning. <span class="gone">You can get a better idea of how the letters were formed with the <em>Inspect</em> display option.</span>
+    </p>
+
+    <p>
+      Each character is wrapped in a <code>&lt;span&gt;</code> and then depending on the complexity of that character, more empty <code>&lt;span&gt;</code> elements are added to the markup to render each shape.  Here's the markup for R:
+    </p>
+
+<pre><code>&lt;span class="css_char r"&gt;
+  R
+  &lt;span class="inside split_vert"&gt;&lt;/span&gt;
+  &lt;span class="outside split_vert"&gt;&lt;/span&gt;
+  &lt;span class="stroke"&gt;&lt;/span&gt;
+  &lt;span class="fill"&gt;&lt;/span&gt;
+&lt;/span&gt;</code></pre>
+
+    <p>
+      The Curtis CSS font wasn&rsquo;t conceived of any practical application.  I was more interested in seeing if it could be pulled off, and if so, what the final result would look like.  This typeface was used in the article <a href="http://v2.desandro.com/articles/why-art">Why Art?</a>.
+    </p>
+    <p>This design pattern is released under a <a href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution License</a>.  You are free to share and remix this work.</p>
+
+  </div>
+
+  <div id="options" class="gone tk_proxima_nova">
+
+    <div class="curtis size280 inspect">
+      <span class="css_char r">
+        R
+        <span class="inside split_vert"></span>
+        <span class="outside split_vert"></span>
+        <span class="stroke"></span>
+        <span class="fill"></span>
+      </span>
+    </div>
+
+    <fieldset id="fontsizes">
+      <legend>Font size</legend>
+
+      <ul>
+        <li>
+          <input type="radio" name="fontsize" value="size28" id="size28" />
+          <label for="size28">28px</label>
+        </li>
+        <li>
+          <input type="radio" name="fontsize" value="size56" id="size56" />
+          <label for="size56">56px</label>
+        </li>
+        <li>
+          <input type="radio" name="fontsize" value="size140" id="size140" checked="checked" />
+          <label for="size140">140px</label>
+        </li>
+        <li>
+          <input type="radio" name="fontsize" value="size280" id="size280" />
+          <label for="size280">280px</label>
+        </li>
+      </ul>
+
+    </fieldset>
+
+    <fieldset id="display">
+      <legend>Display options</legend>
+
+      <ul>
+        <li>
+          <input type="radio" name="display" value="standard" id="standard" checked="checked" />
+          <label for="standard">Standard</label>
+        </li>
+        <li>
+          <input type="radio" name="display" value="inspect" id="inspect" />
+          <label for="inspect">Inspect</label>
+        </li>
+      </ul>
+
+    </fieldset>
+
+  </div>
+
+  <div id="demo" class="curtis size140 standard tk_proxima_nova">
+
+    <p>
+
+      <span class="css_char a">
+        A
+        <span class="outside split_vert"></span>
+        <span class="inside split_horiz"></span>
+        <span class="bar fill"></span>
+      </span>
+
+      <span class="css_char b">
+        B
+        <span class="top fill"></span>
+        <span class="bottom fill"></span>
+        <span class="top neg"></span>
+        <span class="bottom neg"></span>
+      </span>
+
+      <span class="css_char c">
+        C
+        <span class="stroke"></span>
+        <span class="neg"></span>
+      </span>
+
+      <span class="css_char d">
+        D
+        <span class="stroke"></span>
+      </span>
+
+      <span class="css_char e">
+        E
+        <span class="stroke"></span>
+        <span class="fill"></span>
+      </span>
+
+      <span class="css_char f">
+        F
+        <span class="stroke"></span>
+        <span class="fill"></span>
+      </span>
+
+      <span class="css_char g">
+        G
+        <span class="outside stroke"></span>
+        <span class="arm stroke"></span>
+        <span class="spur split_vert"></span>
+        <span class="neg"></span>
+      </span>
+
+      <span class="css_char h">
+        H
+        <span class="stroke top"></span>
+        <span class="stroke bottom"></span>
+      </span>
+
+      <span class="css_char i">
+        I
+        <span class="fill"></span>
+      </span>
+
+      <span class="css_char j">
+        J
+        <span class="stroke"></span>
+        <span class="neg"></span>
+      </span>
+
+      <span class="css_char k">
+        K
+        <span class="split_vert"></span>
+        <span class="split_horiz"></span>
+      </span>
+
+      <span class="css_char l">
+        L
+        <span class="stroke"></span>
+      </span>
+
+
+      <span class="css_char m">
+        M
+        <span class="split_horiz_pos"></span>
+        <span class="split_horiz_neg"></span>
+      </span>
+
+      <span class="css_char n">
+        N
+        <span class="fill"></span>
+        <span class="top_corner split_horiz_neg"></span>
+        <span class="bottom_corner split_horiz_neg"></span>
+      </span>
+
+      <span class="css_char o">
+        O
+        <span class="stroke"></span>
+      </span>
+
+      <span class="css_char p">
+        P
+        <span class="stroke"></span>
+        <span class="fill"></span>
+      </span>
+
+
+
+      <span class="css_char q">
+        Q
+        <span class="stroke"></span>
+        <span class="cross_left split_vert"></span>
+        <span class="cross_right split_vert"></span>
+      </span>
+
+
+      <span class="css_char r">
+        R
+        <span class="inside split_vert"></span>
+        <span class="outside split_vert"></span>
+        <span class="stroke"></span>
+        <span class="fill"></span>
+      </span>
+
+      <span class="css_char s">
+        S
+        <span class="bottom_circle stroke"></span>
+        <span class="left neg"></span>
+        <span class="top_circle stroke"></span>
+        <span class="right neg">
+          <span class="stroke"></span>
+        </span>
+      </span>
+
+      <span class="css_char t">
+        T
+        <span class="stem fill"></span>
+        <span class="cross fill"></span>
+      </span>
+
+      <span class="css_char u">
+        U
+        <span class="stroke"></span>
+      </span>
+
+      <span class="css_char v">
+        V
+        <span class="outside split_vert"></span>
+        <span class="inside split_horiz"></span>
+      </span>
+
+
+
+      <span class="css_char w">
+        W
+        <span class="outside_left split_vert"></span>
+        <span class="outside_right split_vert"></span>
+        <span class="inside_left split_horiz"></span>
+        <span class="inside_right split_horiz"></span>
+      </span>
+
+      <span class="css_char x">
+        X
+        <span class="outside split_vert"></span>
+        <span class="inside split_horiz"></span>
+      </span>
+
+
+      <span class="css_char y">
+        Y
+        <span class="outside split_vert"></span>
+        <span class="inside split_horiz"></span>
+        <span class="fill"></span>
+      </span>
+
+
+      <span class="css_char z">
+        Z
+        <span class="fill"></span>
+        <span class="left split_horiz"></span>
+        <span class="right split_horiz"></span>
+      </span>
+
+      <span class="css_char question">
+        ?
+        <span class="stroke"></span>
+        <span class="neg"></span>
+        <span class="line fill"></span>
+        <span class="dot fill"></span>
+      </span>
+
+      <span class="css_char exclam">
+        !
+        <span class="line fill"></span>
+        <span class="dot fill"></span>
+      </span>
+
+      <span class="css_char period">
+        .
+        <span class="dot fill"></span>
+      </span>
+
+    </p>
+
+
+    <p>
+
+      <span class="word">
+        <span class="css_char q">
+          Q
+          <span class="stroke"></span>
+          <span class="cross_left split_vert"></span>
+          <span class="cross_right split_vert"></span>
+        </span> <!-- /.css_char.q -->
+
+        <span class="css_char u">
+          U
+          <span class="stroke"></span>
+        </span> <!-- /.css_char.u -->
+
+        <span class="css_char i">
+          I
+          <span class="fill"></span>
+        </span> <!-- /.css_char.i -->
+
+        <span class="css_char c">
+          C
+          <span class="stroke"></span>
+          <span class="neg"></span>
+        </span> <!-- /.css_char.c -->
+
+        <span class="css_char k">
+          K
+          <span class="split_vert"></span>
+          <span class="split_horiz"></span>
+        </span> <!-- /.css_char.k -->
+      </span> <!-- /.word -->
+
+      <span class="word">
+        <span class="css_char b">
+          B
+          <span class="top fill"></span>
+          <span class="bottom fill"></span>
+          <span class="top neg"></span>
+          <span class="bottom neg"></span>
+        </span>
+
+        <span class="css_char r">
+          R
+          <span class="inside split_vert"></span>
+          <span class="outside split_vert"></span>
+          <span class="stroke"></span>
+          <span class="fill"></span>
+        </span> <!-- /.css_char.r -->
+
+        <span class="css_char o">
+          O
+          <span class="stroke"></span>
+        </span> <!-- /.css_char.o -->
+
+        <span class="css_char w">
+          W
+          <span class="outside_left split_vert"></span>
+          <span class="outside_right split_vert"></span>
+          <span class="inside_left split_horiz"></span>
+          <span class="inside_right split_horiz"></span>
+        </span> <!-- /.css_char.w -->
+
+        <span class="css_char n">
+          N
+          <span class="fill"></span>
+          <span class="top_corner split_horiz_neg"></span>
+          <span class="bottom_corner split_horiz_neg"></span>
+        </span> <!-- /.css_char.n -->
+      </span> <!-- /.word -->
+
+      <span class="word">
+
+        <span class="css_char f">
+          F
+          <span class="stroke"></span>
+          <span class="fill"></span>
+        </span> <!-- /.css_char.f -->
+
+        <span class="css_char o">
+          O
+          <span class="stroke"></span>
+        </span> <!-- /.css_char.o -->
+
+        <span class="css_char x">
+          X
+          <span class="outside split_vert"></span>
+          <span class="inside split_horiz"></span>
+        </span> <!-- /.css_char.x -->
+      </span> <!-- /.word -->
+
+      <span class="word">
+
+        <span class="css_char j">
+          J
+          <span class="stroke"></span>
+          <span class="neg"></span>
+        </span> <!-- /.css_char.j -->
+
+
+        <span class="css_char u">
+          U
+          <span class="stroke"></span>
+        </span> <!-- /.css_char.u -->
+
+
+        <span class="css_char m">
+          M
+          <span class="split_horiz_pos"></span>
+          <span class="split_horiz_neg"></span>
+        </span> <!-- /.css_char.m -->
+
+        <span class="css_char p">
+          P
+          <span class="stroke"></span>
+          <span class="fill"></span>
+        </span> <!-- /.css_char.p -->
+
+        <span class="css_char s">
+          S
+          <span class="bottom_circle stroke"></span>
+          <span class="left neg"></span>
+          <span class="top_circle stroke"></span>
+          <span class="right neg">
+            <span class="stroke"></span>
+          </span>
+        </span> <!-- /.css_char.s -->
+      </span> <!-- /.word -->
+
+      <span class="word">
+
+        <span class="css_char o">
+          O
+          <span class="stroke"></span>
+        </span> <!-- /.css_char.o -->
+
+        <span class="css_char v">
+          V
+          <span class="outside split_vert"></span>
+          <span class="inside split_horiz"></span>
+        </span> <!-- /.css_char.v -->
+
+        <span class="css_char e">
+          E
+          <span class="stroke"></span>
+          <span class="fill"></span>
+        </span> <!-- /.css_char.e -->
+
+        <span class="css_char r">
+          R
+          <span class="inside split_vert"></span>
+          <span class="outside split_vert"></span>
+          <span class="stroke"></span>
+          <span class="fill"></span>
+        </span> <!-- /.css_char.r -->
+      </span> <!-- /.word -->
+
+      <span class="word">
+
+        <span class="css_char t">
+          T
+          <span class="stem fill"></span>
+          <span class="cross fill"></span>
+        </span> <!-- /.css_char.t -->
+
+        <span class="css_char h">
+          H
+          <span class="stroke top"></span>
+          <span class="stroke bottom"></span>
+        </span> <!-- /.css_char.h -->
+
+        <span class="css_char e">
+          E
+          <span class="stroke"></span>
+          <span class="fill"></span>
+
+        </span> <!-- /.css_char.e -->
+
+      </span> <!-- /.word -->
+
+      <span class="word">
+
+        <span class="css_char l">
+          L
+          <span class="stroke"></span>
+        </span> <!-- /.css_char.l -->
+
+        <span class="css_char a">
+          A
+          <span class="outside split_vert"></span>
+          <span class="inside split_horiz"></span>
+          <span class="bar fill"></span>
+        </span> <!-- /.css_char.a -->
+
+        <span class="css_char z">
+          Z
+          <span class="fill"></span>
+          <span class="left split_horiz"></span>
+          <span class="right split_horiz"></span>
+        </span>
+
+        <span class="css_char y">
+          Y
+          <span class="outside split_vert"></span>
+          <span class="inside split_horiz"></span>
+          <span class="fill"></span>
+        </span> <!-- /.css_char.y -->
+      </span> <!-- /.word -->
+
+      <span class="word">
+        <span class="css_char d">
+          D
+          <span class="stroke"></span>
+        </span> <!-- /.css_char.d -->
+
+        <span class="css_char o">
+          O
+          <span class="stroke"></span>
+        </span> <!-- /.css_char.o -->
+
+        <span class="css_char g">
+          G
+          <span class="outside stroke"></span>
+          <span class="arm stroke"></span>
+          <span class="spur split_vert"></span>
+          <span class="neg"></span>
+        </span> <!-- /.css_char.g -->
+
+
+        <span class="css_char period">
+          .
+          <span class="dot fill"></span>
+        </span>
+
+      </span> <!-- /.word -->
+
+
+
+    </p>
+
+  </div>
+
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script>
+$(function(){
+
+  $('.gone').removeClass('gone');
+
+  var $demo = $('#demo');
+
+  $demo.removeClass('size28').removeClass('size56')
+        .removeClass('size140').removeClass('size280')
+        .removeClass('standard').removeClass('inspect');
+
+  var fontsize = $('#fontsizes input:checked').val();
+  var display =  $('#display input:checked').val();
+  $demo.addClass( fontsize ).addClass( display );
+
+  $('#fontsizes input').click(function(){
+    $demo.removeClass('size28').removeClass('size56')
+          .removeClass('size140').removeClass('size280');
+    var fontsize = $(this).val();
+    $demo.addClass( fontsize );
+  });
+
+  $('#display input').click(function(){
+    $demo.removeClass('standard').removeClass('inspect');
+    var display = $(this).val();
+    $demo.addClass( display );
+  });
+
+});
+</script>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,2042 @@
+body {
+  background: #EEE;
+  font-family: sans-serif;
+  line-height: 1.45;
+}
+
+p, ul {
+  margin-top: 0;
+}
+
+#content {
+  padding: 40px;
+  
+}
+
+h1 {
+  height: 60px;
+  margin-bottom: 40px;
+}
+
+h1 .f + .a { margin-left: -12px; }
+h1 .a + .c { margin-left: -10px; }
+
+
+.gone { display: none;}
+
+fieldset {
+  clear: both;
+  margin-bottom: 10px;
+  border: 1px solid #CCC;
+  padding: 4px 0 4px 20px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 0.5em;
+}
+
+label {
+}
+
+#content fieldset ul { padding: 0; margin-bottom: 10px; }
+
+#content fieldset li {
+  display: inline;
+  list-style: none;
+  margin: 0 20px 0 0;
+}	
+
+#copy {
+  width: 520px;
+  margin-right: 60px;
+  float: left;
+  clear: both;
+}
+
+#options {
+  width: 360px;
+  float: left;
+}
+
+#options .curtis {
+  height: 280px;
+}
+
+.curtis {
+  clear: both;
+}
+
+#demo {margin-top: 20px;}
+
+/********** defaults for all characters all font sizes **********/
+
+
+.standard .css_char .fill { background: #000; }
+.standard .css_char .neg { background: #EEE; }
+.standard .css_char .stroke,
+.standard .css_char .neg_stroke,
+.standard .css_char .split_vert,
+.standard .css_char .split_horiz,
+.standard .css_char .split_horiz_pos,
+.standard .css_char .split_horiz_neg { border: 0px solid; }
+.standard .css_char .stroke { border-color: #000; }
+.standard .css_char .split_vert { border-color: #000 transparent; }
+.standard .css_char .split_horiz { border-color: #EEE transparent; }
+.standard .css_char .split_horiz_pos { border-color: transparent #000; }
+.standard .css_char .split_horiz_neg { border-color: transparent #EEE; }
+
+
+.inspect { background: url(grid.png); }
+
+.inspect * { background: hsla(0,100%,50%,.07); }
+
+.inspect .css_char .fill { background: hsla(0,100%,50%,.4); }
+.inspect .css_char .neg { background: hsla(240,50%,50%,.15); }
+.inspect .css_char .stroke,
+.inspect .css_char .neg_stroke,
+.inspect .css_char .split_vert,
+.inspect .css_char .split_horiz,
+.inspect .css_char .split_horiz_pos,
+.inspect .css_char .split_horiz_neg { border: 0px solid; }
+.inspect .css_char .stroke { border-color: hsla(0,100%,50%,.4); }
+.inspect .css_char .split_vert { border-color: hsla(0,100%,50%,.4) transparent; }
+.inspect .css_char .split_horiz { border-color: hsla(240,50%,50%,.15) transparent; }
+.inspect .css_char .split_horiz_pos { border-color: transparent hsla(0,100%,50%,.4); }
+.inspect .css_char .split_horiz_neg { border-color: transparent hsla(240,50%,50%,.15); }
+
+.css_char {
+  position: relative;
+  height: 140px;
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin: 0 5px 20px 0;
+}
+.standard .css_char { text-indent: -9999px; }
+.inspect .css_char { text-indent: 0; }
+
+
+.css_char span {
+  display: block;
+  position: absolute;
+  text-indent: -9999px;
+  width: 0px;
+  height: 0px;
+  top: 0;
+  left: 0;
+}
+
+.word { 
+  display: block;
+  float: left;
+}
+
+.curtis p {
+	clear: both;
+}
+
+
+/********** font size 280 **********/
+
+
+.size280 .css_char {
+  height: 280px;
+  margin: 0 10px 40px 0;
+}
+
+
+.word { 
+   padding-right: 40px;
+}
+
+
+/***** A *****/
+
+.size280 .css_char.a {  width: 280px; }
+
+.size280 .css_char.a .outside { border-width: 0 140px 280px; }
+
+.size280 .css_char.a .inside {
+  border-width: 0 60px 120px;
+  top: 180px;
+  left: 80px
+}
+
+.size280 .css_char.a .bar {
+  width: 120px;
+  height: 40px;
+  top: 220px;
+  left: 80px;
+}
+
+/**** B *****/
+
+.size280 .css_char.b { width: 200px; }
+
+.size280 .css_char.b .top.fill,
+.size280 .css_char.b .bottom.fill {
+  width: 200px;
+  height: 180px;
+  border-width: 0px;
+  border-top-right-radius: 90px;
+  border-bottom-right-radius: 90px;
+  -moz-border-radius-topright: 90px;
+  -moz-border-radius-bottomright: 90px;
+  -webkit-border-top-right-radius: 90px;
+  -webkit-border-bottom-right-radius: 90px;
+}
+.size280 .css_char.b .bottom.fill { top: 100px; }
+
+.size280 .css_char.b .top.neg,
+.size280 .css_char.b .bottom.neg {
+  width: 40px;
+  height: 30px;
+  left: 80px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+}
+.size280 .css_char.b .top.neg { top: 80px; }
+.size280 .css_char.b .bottom.neg { top: 170px; }
+
+
+/***** C, D, G, O & Q *****/
+
+.size280 .css_char.c,
+.size280 .css_char.o,
+.size280 .css_char.d,
+.size280 .css_char.g,
+.size280 .css_char.q {  width: 280px; }
+
+.size280 .css_char.c .stroke,
+.size280 .css_char.o .stroke,
+.size280 .css_char.d .stroke,
+.size280 .css_char.g .outside,
+.size280 .css_char.q .stroke {
+  width: 120px;
+  height: 120px;
+  border-width: 80px;
+  border-radius: 140px;
+  -moz-border-radius: 140px;
+  -webkit-border-radius: 140px;
+}
+
+.size280 .css_char.d .stroke {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-top-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+}
+
+.size280 .css_char.c .neg,
+.size280 .css_char.g .neg {
+  width: 140px;
+  height: 40px;
+  top: 120px;
+  left: 140px;
+}
+
+
+
+.size280 .css_char.g .spur {
+  width: 40px;
+  border-width: 120px 0 0 60px;
+  top: 160px;
+  left: 180px;
+}
+
+.size280 .css_char.q .cross_left,
+.size280 .css_char.q .cross_right {
+  width: 0px;
+  top: 160px;
+}
+.size280 .css_char.q .cross_left {
+  border-width: 120px 0 0 60px;
+  left: 140px;
+}
+
+.size280 .css_char.q .cross_right {
+  border-width: 0 60px 120px 0;
+  left: 200px;
+}
+
+/***** E & F *****/
+
+.size280 .css_char.e, .size280 .css_char.f { width: 200px; }
+
+.size280 .css_char.e .stroke {
+  height: 120px;
+  width: 120px;
+  border-width: 80px 0 80px 80px;
+}
+
+.size280 .css_char.f .stroke {
+  height: 200px;
+  width: 120px;
+  border-width: 80px 0 0 80px;
+}
+
+.size280 .css_char.e .fill,
+.size280 .css_char.f .fill {
+  height: 60px;
+  width: 120px;
+  top: 110px;
+  left: 60px;
+}
+
+
+
+.size280 .css_char.v .inside,
+.size280 .css_char.w .inside_left { left: 80px; }
+
+.size280 .css_char.w .inside_right { left: 180px; }
+
+
+/***** H *****/
+
+.size280 .css_char.h { width: 200px; }
+
+.size280 .css_char.h .top,
+.size280 .css_char.h .bottom {
+  width: 40px;
+  height: 110px;
+}
+.size280 .css_char.h .top { border-width: 0 80px 40px; }
+.size280 .css_char.h .bottom {
+  border-width: 40px 80px 0;
+  top: 130px;
+}
+
+/***** I *****/
+
+.size280 .css_char.i { width: 80px; }
+
+.size280 .css_char.i .fill {
+  width: 80px;
+  height: 280px;
+}
+
+/***** U & J *****/
+
+.size280 .css_char.u,
+.size280 .css_char.j { width: 220px; }
+
+.size280 .css_char.u .stroke,
+.size280 .css_char.j .stroke {
+  width: 60px;
+  height: 200px;
+  border-width: 0 80px 80px;
+  border-bottom-left-radius: 110px;
+  border-bottom-right-radius: 110px;
+  -moz-border-radius-bottomleft: 110px;
+  -moz-border-radius-bottomright: 110px;
+  -webkit-border-bottom-left-radius: 110px;
+  -webkit-border-bottom-right-radius: 110px;
+}
+
+.size280 .css_char.j .neg {
+  width: 120px;
+  height: 160px;
+  left: -20px;
+}
+
+/***** K *****/
+
+.size280 .css_char.k { width: 220px; }
+
+.size280 .css_char.k .split_vert {
+  width: 150px;
+  border-width: 140px 70px 140px 0;
+}
+
+.size280 .css_char.k .split_horiz {
+  height: 80px;
+  border-width: 120px 60px 120px 0;
+  left: 80px;
+  top: -20px;
+}
+
+/***** L *****/
+
+.size280 .css_char.l { width: 200px; }
+
+.size280 .css_char.l .stroke {
+  width: 120px;
+  height: 200px;
+  border-width: 0 0 80px 80px;
+}
+
+
+
+/***** M *****/
+
+.size280 .css_char.m { width: 280px; }
+
+.size280 .css_char.m .split_horiz_pos {
+  height: 160px;
+  border-width: 140px 140px 0;
+}
+
+.size280 .css_char.m .split_horiz_neg {
+  height: 40px;
+  border-width: 60px 60px 0;
+  top: 190px;
+  left: 80px;
+}
+
+/***** N *****/
+
+.size280 .css_char.n { width: 240px; }
+
+.size280 .css_char.n .top_corner {
+  border-width: 0 200px 150px 0;
+  top: -30px;
+  left: -40px;
+}
+
+.size280 .css_char.n .bottom_corner {
+  border-width: 150px 0 0 200px;
+  top: 160px;
+  left: 80px;
+}
+
+.size280 .css_char.n .fill {
+  width: 240px;
+  height: 280px; 
+}
+
+.size280 .css_char.n .left_leg { top: 120px; }
+.size280 .css_char.n .right_leg { left: 160px; }
+  
+  
+/***** R  & P *****/
+
+.size280 .css_char.r { width: 210px; }
+.size280 .css_char.p { width: 200px; }
+
+.size280 .css_char.r .inside {
+  width: 20px;
+  border-width: 120px 0 0 60px;
+  top: 160px;
+  left:  60px;
+}
+
+.size280 .css_char.r .outside {
+  width: 20px;
+  border-width: 0 60px 120px 0px;
+  top: 160px;
+  left: 130px;
+}
+
+.size280 .css_char.r .stroke,
+.size280 .css_char.p .stroke {
+  width: 80px;
+  height: 40px;
+  border-width: 80px 80px 80px 0;
+  left: 40px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  -moz-border-radius-topright: 100px;
+  -moz-border-radius-bottomright: 100px;
+  -webkit-border-top-right-radius: 100px;
+  -webkit-border-bottom-right-radius: 100px;
+}
+
+.size280 .css_char.r .fill,
+.size280 .css_char.p .fill {
+  width: 80px;
+  height: 280px;
+}
+
+/***** S & some of ? *****/
+
+.size280 .css_char.s,
+.size280 .css_char.question {
+  width: 180px;
+}
+
+.size280 .css_char.s .top_circle,
+.size280 .css_char.s .bottom_circle,
+.size280 .css_char.s .right .stroke,
+.size280 .css_char.question .stroke {
+  width: 20px;
+  height: 20px;
+  border-width: 80px;
+  border-radius: 90px;
+  -moz-border-radius: 90px;
+  -webkit-border-radius: 90px;
+}
+.size280 .css_char.s .top_circle { top: 0px; }
+.size280 .css_char.s .bottom_circle { top: 100px; }
+
+.size280 .css_char.s .left.neg,
+.size280 .css_char.s .right.neg,
+.size280 .css_char.question .neg {
+  width: 90px;
+  height: 100px;
+  top: 90px;
+}
+.size280 .css_char.s .right.neg { 
+  left: 90px;
+  overflow: hidden;
+}
+.size280 .css_char.s .right .stroke {
+  top: 10px;
+  left: -90px;
+}
+
+/***** T *****/
+
+.size280 .css_char.t { width: 200px; }
+
+.size280 .css_char.t .cross {
+  width: 200px;
+  height: 80px;
+}
+
+.size280 .css_char.t .stem {
+  width: 80px;
+  height: 240px;
+  left: 60px;
+  top: 40px;
+}
+
+/***** V & W *****/
+
+.size280 .css_char.v {  width: 280px; }
+
+.size280 .css_char.w {  width: 380px; }
+
+.size280 .css_char.v .outside,
+.size280 .css_char.w .outside_left,
+.size280 .css_char.w .outside_right { border-width: 280px 140px 0px; }
+
+.size280 .css_char.w .outside_right { left: 100px; }
+
+.size280 .css_char.v .inside,
+.size280 .css_char.w .inside_left,
+.size280 .css_char.w .inside_right { 
+  border-width: 120px 60px 0; 
+  top: -20px;
+}
+
+/***** X *****/
+
+.size280 .css_char.x { width: 260px; }
+
+.size280 .css_char.x .outside {
+  width: 100px;
+  border-width: 140px 80px;
+}
+
+.size280 .css_char.x .inside {
+  height: 160px;
+  border-width: 80px 40px;
+  left: 90px;
+  top: -20px;
+}
+
+
+
+/***** Y *****/
+
+.size280 .css_char.y {  width: 260px; }
+
+.size280 .css_char.y .outside { border-width: 260px 130px 0px; }
+
+.size280 .css_char.y .inside { 
+  border-width: 100px 50px 0; 
+  top: -20px;
+  left: 80px;
+}
+
+.size280 .css_char.y .fill {
+  width: 80px;
+  height: 120px;
+  left: 90px;
+  top: 160px;
+}
+
+
+
+/***** Z *****/
+
+.size280 .css_char.z { width: 240px; }
+
+.size280 .css_char.z .fill {
+  width: 240px;
+  height: 280px;
+}
+
+.size280 .css_char.z .left {
+  border-width: 240px 120px 0 0;
+  top: 80px;
+  left: -20px;
+}
+.size280 .css_char.z .right {
+  border-width: 0 0px 240px 120px;
+  top: -40px;
+  left: 140px;
+}
+
+/***** ., !, & ? *****/
+
+.size280 .css_char.period,
+.size280 .css_char.exclam { width: 80px; }
+
+.size280 .css_char.period .dot,
+.size280 .css_char.exclam .dot,
+.size280 .css_char.question .dot {
+  width: 80px;
+  height: 80px;
+  top: 200px;
+  border-radius: 40px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+}
+.size280 .css_char.question .dot { left: 50px;}
+
+.size280 .css_char.exclam .line {
+  width: 80px;
+  height: 190px;
+}
+
+.size280 .css_char.question .line {
+  width: 80px;
+  height: 90px;
+  left: 50px;
+  top: 100px;
+}
+
+
+/********** font size 140 **********/
+
+
+.size140 .css_char {
+  height: 140px;
+  margin: 0 10px 20px 0;
+}
+
+
+.word { 
+   padding-right: 40px;
+}
+
+
+/***** A *****/
+
+.size140 .css_char.a {  width: 140px; }
+
+.size140 .css_char.a .outside { border-width: 0 70px 140px; }
+
+.size140 .css_char.a .inside {
+  border-width: 0 30px 60px;
+  top: 90px;
+  left: 40px
+}
+
+.size140 .css_char.a .bar {
+  width: 60px;
+  height: 20px;
+  top: 110px;
+  left: 40px;
+}
+
+/**** B *****/
+
+.size140 .css_char.b { width: 100px; }
+
+.size140 .css_char.b .top.fill,
+.size140 .css_char.b .bottom.fill {
+  width: 100px;
+  height: 90px;
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
+  -moz-border-radius-topright: 45px;
+  -moz-border-radius-bottomright: 45px;
+  -webkit-border-top-right-radius: 45px;
+  -webkit-border-bottom-right-radius: 45px;
+}
+.size140 .css_char.b .bottom.fill { top: 50px; }
+
+.size140 .css_char.b .top.neg,
+.size140 .css_char.b .bottom.neg {
+  width: 20px;
+  height: 15px;
+  left: 40px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  -moz-border-radius-topright: 7px;
+  -moz-border-radius-bottomright: 7px;
+  -webkit-border-top-right-radius: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+}
+.size140 .css_char.b .top.neg { top: 40px; }
+.size140 .css_char.b .bottom.neg { top: 85px; }
+
+
+/***** C, D, G, O & Q *****/
+
+.size140 .css_char.c,
+.size140 .css_char.o,
+.size140 .css_char.d,
+.size140 .css_char.g,
+.size140 .css_char.q {  width: 140px; }
+
+.size140 .css_char.c .stroke,
+.size140 .css_char.o .stroke,
+.size140 .css_char.d .stroke,
+.size140 .css_char.g .outside,
+.size140 .css_char.q .stroke {
+  width: 60px;
+  height: 60px;
+  border-width: 40px;
+  border-radius: 70px;
+  -moz-border-radius: 70px;
+  -webkit-border-radius: 70px;
+}
+
+.size140 .css_char.d .stroke {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-top-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+}
+
+.size140 .css_char.c .neg,
+.size140 .css_char.g .neg {
+  width: 70px;
+  height: 20px;
+  top: 60px;
+  left: 70px;
+}
+
+.size140 .css_char.g .spur {
+  width: 20px;
+  border-width: 60px 0 0 30px;
+  top: 80px;
+  left: 90px;
+}
+
+.size140 .css_char.q .cross_left,
+.size140 .css_char.q .cross_right {
+  width: 0px;
+  top: 80px;
+}
+.size140 .css_char.q .cross_left {
+  border-width: 60px 0 0 30px;
+  left: 70px;
+}
+
+.size140 .css_char.q .cross_right {
+  border-width: 0 30px 60px 0;
+  left: 100px;
+}
+
+/***** E & F *****/
+
+.size140 .css_char.e, .size140 .css_char.f { width: 100px; }
+
+.size140 .css_char.e .stroke {
+  height: 60px;
+  width: 60px;
+  border-width: 40px 0 40px 40px;
+}
+
+.size140 .css_char.f .stroke {
+  height: 100px;
+  width: 60px;
+  border-width: 40px 0 0 40px;
+}
+
+.size140 .css_char.e .fill,
+.size140 .css_char.f .fill {
+  height: 30px;
+  width: 60px;
+  top: 55px;
+  left: 30px;
+}
+
+.size140 .css_char.v .inside,
+.size140 .css_char.w .inside_left { left: 40px; }
+
+.size140 .css_char.w .inside_right { left: 90px; }
+
+
+/***** H *****/
+
+.size140 .css_char.h { width: 100px; }
+
+.size140 .css_char.h .top,
+.size140 .css_char.h .bottom {
+  width: 20px;
+  height: 55px;
+}
+.size140 .css_char.h .top { border-width: 0 40px 20px; }
+.size140 .css_char.h .bottom {
+  border-width: 20px 40px 0;
+  top: 65px;
+}
+
+/***** I *****/
+
+.size140 .css_char.i { width: 40px; }
+
+.size140 .css_char.i .fill {
+  width: 40px;
+  height: 140px;
+}
+
+/***** U & J *****/
+
+.size140 .css_char.u,
+.size140 .css_char.j { width: 110px; }
+
+.size140 .css_char.u .stroke,
+.size140 .css_char.j .stroke {
+  width: 30px;
+  height: 100px;
+  border-width: 0 40px 40px;
+  border-bottom-left-radius: 55px;
+  border-bottom-right-radius: 55px;
+  -moz-border-radius-bottomleft: 55px;
+  -moz-border-radius-bottomright: 55px;
+  -webkit-border-bottom-left-radius: 55px;
+  -webkit-border-bottom-right-radius: 55px;
+}
+
+.size140 .css_char.j .neg {
+  width: 60px;
+  height: 80px;
+  left: -10px;
+}
+
+/***** K *****/
+
+.size140 .css_char.k { width: 110px; }
+
+.size140 .css_char.k .split_vert {
+  width: 75px;
+  border-width: 70px 35px 70px 0;
+}
+
+.size140 .css_char.k .split_horiz {
+  height: 40px;
+  border-width: 60px 30px 60px 0;
+  left: 40px;
+  top: -10px;
+}
+
+/***** L *****/
+
+.size140 .css_char.l { width: 100px; }
+
+.size140 .css_char.l .stroke {
+  width: 60px;
+  height: 100px;
+  border-width: 0 0 40px 40px;
+}
+
+
+/***** M *****/
+
+.size140 .css_char.m { width: 140px; }
+
+.size140 .css_char.m .split_horiz_pos {
+  height: 80px;
+  border-width: 70px 70px 0;
+}
+
+.size140 .css_char.m .split_horiz_neg {
+  height: 20px;
+  border-width: 30px 30px 0;
+  top: 95px;
+  left: 40px;
+}
+
+/***** N *****/
+
+.size140 .css_char.n { width: 120px; }
+
+.size140 .css_char.n .top_corner {
+  border-width: 0 100px 75px 0;
+  top: -15px;
+  left: -20px;
+}
+
+.size140 .css_char.n .bottom_corner {
+  border-width: 75px 0 0 100px;
+  top: 80px;
+  left: 40px;
+}
+
+.size140 .css_char.n .fill {
+  width: 120px;
+  height: 140px; 
+}
+
+/***** R  & P *****/
+
+.size140 .css_char.r { width: 105px; }
+.size140 .css_char.p { width: 100px; }
+
+.size140 .css_char.r .inside {
+  width: 10px;
+  border-width: 60px 0 0 30px;
+  top: 80px;
+  left:  30px;
+}
+
+.size140 .css_char.r .outside {
+  width: 10px;
+  border-width: 0 30px 60px 0;
+  top: 80px;
+  left: 65px;
+}
+
+.size140 .css_char.r .stroke,
+.size140 .css_char.p .stroke {
+  width: 40px;
+  height: 20px;
+  border-width: 40px 40px 40px 0;
+  left: 20px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  -moz-border-radius-topright: 50px;
+  -moz-border-radius-bottomright: 50px;
+  -webkit-border-top-right-radius: 50px;
+  -webkit-border-bottom-right-radius: 50px;
+}
+
+.size140 .css_char.r .fill,
+.size140 .css_char.p .fill {
+  width: 40px;
+  height: 140px;
+}
+
+/***** S & some of ? *****/
+
+.size140 .css_char.s,
+.size140 .css_char.question {
+  width: 90px;
+}
+
+.size140 .css_char.s .top_circle,
+.size140 .css_char.s .bottom_circle,
+.size140 .css_char.s .right .stroke,
+.size140 .css_char.question .stroke {
+  width: 10px;
+  height: 10px;
+  border-width: 40px;
+  border-radius: 45px;
+  -moz-border-radius: 45px;
+  -webkit-border-radius: 45px;
+}
+.size140 .css_char.s .bottom_circle { top: 50px; }
+
+.size140 .css_char.s .left.neg,
+.size140 .css_char.s .right.neg,
+.size140 .css_char.question .neg {
+  width: 45px;
+  height: 50px;
+  top: 45px;
+}
+.size140 .css_char.s .right.neg { 
+  left: 45px;
+  overflow: hidden;
+}
+.size140 .css_char.s .right .stroke {
+  top: 5px;
+  left: -45px;
+}
+
+/***** T *****/
+
+.size140 .css_char.t { width: 100px; }
+
+.size140 .css_char.t .cross {
+  width: 100px;
+  height: 40px;
+}
+
+.size140 .css_char.t .stem {
+  width: 40px;
+  height: 120px;
+  left: 30px;
+  top: 20px;
+}
+
+/***** V & W *****/
+
+.size140 .css_char.v {  width: 140px; }
+
+.size140 .css_char.w {  width: 190px; }
+
+.size140 .css_char.v .outside,
+.size140 .css_char.w .outside_left,
+.size140 .css_char.w .outside_right { border-width: 140px 70px 0; }
+
+.size140 .css_char.w .outside_right { left: 50px; }
+
+.size140 .css_char.v .inside,
+.size140 .css_char.w .inside_left,
+.size140 .css_char.w .inside_right { 
+  border-width: 60px 30px 0; 
+  top: -10px;
+}
+
+/***** X *****/
+
+.size140 .css_char.x { width: 130px; }
+
+.size140 .css_char.x .outside {
+  width: 50px;
+  border-width: 70px 40px;
+}
+
+.size140 .css_char.x .inside {
+  height: 80px;
+  border-width: 40px 20px;
+  left: 45px;
+  top: -10px;
+}
+
+
+
+/***** Y *****/
+
+.size140 .css_char.y {  width: 130px; }
+
+.size140 .css_char.y .outside { border-width: 130px 65px 0; }
+
+.size140 .css_char.y .inside { 
+  border-width: 50px 25px 0; 
+  top: -10px;
+  left: 40px;
+}
+
+.size140 .css_char.y .fill {
+  width: 40px;
+  height: 60px;
+  left: 45px;
+  top: 80px;
+}
+
+
+
+/***** Z *****/
+
+.size140 .css_char.z { width: 120px; }
+
+.size140 .css_char.z .fill {
+  width: 120px;
+  height: 140px;
+}
+
+.size140 .css_char.z .left {
+  border-width: 120px 60px 0 0;
+  top: 40px;
+  left: -10px;
+}
+.size140 .css_char.z .right {
+  border-width: 0 0 120px 60px;
+  top: -20px;
+  left: 70px;
+}
+
+/***** ., !, & ? *****/
+
+.size140 .css_char.period,
+.size140 .css_char.exclam { width: 40px; }
+
+.size140 .css_char.period .dot,
+.size140 .css_char.exclam .dot,
+.size140 .css_char.question .dot {
+  width: 40px;
+  height: 40px;
+  top: 100px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+.size140 .css_char.question .dot { left: 25px;}
+
+.size140 .css_char.exclam .line {
+  width: 40px;
+  height: 95px;
+}
+
+.size140 .css_char.question .line {
+  width: 40px;
+  height: 45px;
+  left: 25px;
+  top: 50px;
+}
+
+/*************** font size 56 ***************/
+
+.size56 .css_char {
+  height: 56px;
+  margin: 0 4px 8px 0;
+}
+
+
+
+.size56 .word { 
+  padding-right: 28px;
+  }
+
+/***** A *****/
+
+.size56 .css_char.a {  width: 56px; }
+
+.size56 .css_char.a .outside { border-width: 0 28px 56px; }
+
+.size56 .css_char.a .inside {
+  border-width: 0 12px 24px;
+  top: 36px;
+  left: 16px
+}
+
+.size56 .css_char.a .bar {
+  width: 24px;
+  height: 8px;
+  top: 44px;
+  left: 16px;
+}
+
+/**** B *****/
+
+.size56 .css_char.b { width: 40px; }
+
+.size56 .css_char.b .top.fill,
+.size56 .css_char.b .bottom.fill {
+  width: 40px;
+  height: 36px;
+  border-width: 0px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  -moz-border-radius-topright: 18px;
+  -moz-border-radius-bottomright: 18px;
+  -webkit-border-top-right-radius: 18px;
+  -webkit-border-bottom-right-radius: 18px;
+}
+.size56 .css_char.b .bottom.fill { top: 20px; }
+
+.size56 .css_char.b .top.neg,
+.size56 .css_char.b .bottom.neg {
+  width: 8px;
+  height: 6px;
+  left: 16px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomright: 2px;
+  -webkit-border-top-right-radius: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+}
+.size56 .css_char.b .top.neg { top: 16px; }
+.size56 .css_char.b .bottom.neg { top: 34px; }
+
+
+/***** C, D, G, O & Q *****/
+
+.size56 .css_char.c,
+.size56 .css_char.o,
+.size56 .css_char.d,
+.size56 .css_char.g,
+.size56 .css_char.q {  width: 56px; }
+
+.size56 .css_char.c .stroke,
+.size56 .css_char.o .stroke,
+.size56 .css_char.d .stroke,
+.size56 .css_char.g .outside,
+.size56 .css_char.q .stroke {
+  width: 24px;
+  height: 24px;
+  border-width: 16px;
+  border-radius: 28px;
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+}
+
+.size56 .css_char.d .stroke {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-top-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+}
+
+.size56 .css_char.c .neg,
+.size56 .css_char.g .neg {
+  width: 28px;
+  height: 8px;
+  top: 24px;
+  left: 28px;
+}
+
+
+
+.size56 .css_char.g .spur {
+  width: 8px;
+  border-width: 24px 0 0 12px;
+  top: 32px;
+  left: 36px;
+}
+
+.size56 .css_char.q .cross_left,
+.size56 .css_char.q .cross_right {
+  width: 0px;
+  top: 32px;
+}
+.size56 .css_char.q .cross_left {
+  border-width: 24px 0 0 12px;
+  left: 28px;
+}
+
+.size56 .css_char.q .cross_right {
+  border-width: 0 12px 24px 0;
+  left: 40px;
+}
+
+/***** E & F *****/
+
+.size56 .css_char.e, .size56 .css_char.f { width: 40px; }
+
+.size56 .css_char.e .stroke {
+  height: 24px;
+  width: 24px;
+  border-width: 16px 0 16px 16px;
+}
+
+.size56 .css_char.f .stroke {
+  height: 40px;
+  width: 24px;
+  border-width: 16px 0 0 16px;
+}
+
+.size56 .css_char.e .fill,
+.size56 .css_char.f .fill {
+  height: 12px;
+  width: 24px;
+  top: 22px;
+  left: 12px;
+}
+
+
+
+
+
+/***** H *****/
+
+.size56 .css_char.h { width: 40px; }
+
+.size56 .css_char.h .top,
+.size56 .css_char.h .bottom {
+  width: 8px;
+  height: 22px;
+}
+.size56 .css_char.h .top { border-width: 0 16px 8px; }
+.size56 .css_char.h .bottom {
+  border-width: 8px 16px 0;
+  top: 26px;
+}
+
+/***** I *****/
+
+.size56 .css_char.i { width: 16px; }
+
+.size56 .css_char.i .fill {
+  width: 16px;
+  height: 56px;
+}
+
+/***** U & J *****/
+
+.size56 .css_char.u,
+.size56 .css_char.j { width: 44px; }
+
+.size56 .css_char.u .stroke,
+.size56 .css_char.j .stroke {
+  width: 12px;
+  height: 40px;
+  border-width: 0 16px 16px;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  -moz-border-radius-bottomleft: 22px;
+  -moz-border-radius-bottomright: 22px;
+  -webkit-border-bottom-left-radius: 22px;
+  -webkit-border-bottom-right-radius: 22px;
+}
+
+.size56 .css_char.j .neg {
+  width: 24px;
+  height: 32px;
+  left: -4px;
+}
+
+/***** K *****/
+
+.size56 .css_char.k { width: 44px; }
+
+.size56 .css_char.k .split_vert {
+  width: 30px;
+  border-width: 28px 14px 28px 0;
+}
+
+.size56 .css_char.k .split_horiz {
+  height: 16px;
+  border-width: 24px 12px 24px 0;
+  left: 16px;
+  top: -4px;
+}
+
+
+
+/***** L *****/
+
+.size56 .css_char.l { width: 40px; }
+
+.size56 .css_char.l .stroke {
+  width: 24px;
+  height: 40px;
+  border-width: 0 0 16px 16px;
+}
+
+
+
+/***** M *****/
+
+.size56 .css_char.m { width: 56px; }
+
+.size56 .css_char.m .split_horiz_pos {
+  height: 32px;
+  border-width: 28px 28px 0;
+}
+
+.size56 .css_char.m .split_horiz_neg {
+  height: 8px;
+  border-width: 12px 12px 0;
+  top: 38px;
+  left: 16px;
+}
+
+/***** N *****/
+
+.size56 .css_char.n { width: 48px; }
+
+.size56 .css_char.n .top_corner {
+  border-width: 0 32px 24px 0;
+
+}
+
+.size56 .css_char.n .bottom_corner {
+  border-width: 24px 0 0 32px;
+  top: auto;
+  left: auto;
+  bottom: 0;
+  right: 0;
+}
+
+.size56 .css_char.n .fill {
+  width: 48px;
+  height: 56px; 
+}
+
+  
+  
+/***** R  & P *****/
+
+.size56 .css_char.r { width: 42px; }
+.size56 .css_char.p { width: 40px; }
+
+.size56 .css_char.r .inside {
+  width: 4px;
+  border-width: 24px 0 0 12px;
+  top: 32px;
+  left:  12px;
+}
+
+.size56 .css_char.r .outside {
+  width: 4px;
+  border-width: 0 12px 24px 0;
+  top: 32px;
+  left: 26px;
+}
+
+.size56 .css_char.r .stroke,
+.size56 .css_char.p .stroke {
+  width: 16px;
+  height: 8px;
+  border-width: 16px 16px 16px 0;
+  left: 8px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+}
+
+.size56 .css_char.r .fill,
+.size56 .css_char.p .fill {
+  width: 16px;
+  height: 56px;
+}
+
+/***** S & some of ? *****/
+
+.size56 .css_char.s,
+.size56 .css_char.question {
+  width: 36px;
+}
+
+.size56 .css_char.s .top_circle,
+.size56 .css_char.s .bottom_circle,
+.size56 .css_char.s .right .stroke,
+.size56 .css_char.question .stroke {
+  width: 4px;
+  height: 4px;
+  border-width: 16px;
+  border-radius: 18px;
+  -moz-border-radius: 18px;
+  -webkit-border-radius: 18px;
+}
+.size56 .css_char.s .bottom_circle { 
+  top: auto;
+  bottom: 0;
+}
+
+.size56 .css_char.s .left.neg,
+.size56 .css_char.s .right.neg,
+.size56 .css_char.question .neg {
+  width: 18px;
+  height: 20px;
+  top: 18px;
+}
+.size56 .css_char.s .right.neg { 
+  left: 18px;
+  overflow: hidden;
+}
+.size56 .css_char.s .right .stroke {
+  top: 2px;
+  left: -18px;
+}
+
+/***** T *****/
+
+.size56 .css_char.t { width: 40px; }
+
+.size56 .css_char.t .cross {
+  width: 40px;
+  height: 16px;
+}
+
+.size56 .css_char.t .stem {
+  width: 16px;
+  height: 48px;
+  left: 12px;
+  top: 8px;
+}
+
+/***** V & W *****/
+
+
+.size56 .css_char.v {  width: 56px; }
+
+.size56 .css_char.w {  width: 76px; }
+
+.size56 .css_char.v .inside,
+.size56 .css_char.w .inside_left { left: 16px; }
+
+.size56 .css_char.w .inside_right { left: 36px; }
+
+.size56 .css_char.v .outside,
+.size56 .css_char.w .outside_left,
+.size56 .css_char.w .outside_right { border-width: 56px 28px 0; }
+
+.size56 .css_char.w .outside_right { left: auto; right: 0; }
+
+.size56 .css_char.v .inside,
+.size56 .css_char.w .inside_left,
+.size56 .css_char.w .inside_right { 
+  border-width: 24px 12px 0; 
+  top: -4px;
+}
+
+/***** X *****/
+
+.size56 .css_char.x { width: 52px; }
+
+.size56 .css_char.x .outside {
+  width: 20px;
+  border-width: 28px 16px;
+}
+
+.size56 .css_char.x .inside {
+  height: 32px;
+  border-width: 16px 8px;
+  left: 18px;
+  top: -4px;
+}
+
+
+
+/***** Y *****/
+
+.size56 .css_char.y {  width: 52px; }
+
+.size56 .css_char.y .outside { border-width: 52px 26px 0; }
+
+.size56 .css_char.y .inside { 
+  border-width: 20px 10px 0; 
+  top: -4px;
+  left: 16px;
+}
+
+.size56 .css_char.y .fill {
+  width: 16px;
+  height: 24px;
+  left: 18px;
+  top: 32px;
+}
+
+
+
+/***** Z *****/
+
+.size56 .css_char.z { width: 48px; }
+
+.size56 .css_char.z .fill {
+  width: 48px;
+  height: 56px;
+}
+
+.size56 .css_char.z .left {
+  border-width: 48px 24px 0 0;
+  top: 16px;
+  left: -4px;
+}
+.size56 .css_char.z .right {
+  border-width: 0 0 48px 24px;
+  top: -8px;
+  left: 28px;
+}
+
+/***** ., !, & ? *****/
+
+.size56 .css_char.period,
+.size56 .css_char.exclam { width: 16px; }
+
+.size56 .css_char.period .dot,
+.size56 .css_char.exclam .dot,
+.size56 .css_char.question .dot {
+  width: 16px;
+  height: 16px;
+  top: 40px;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+.size56 .css_char.question .dot { left: 10px;}
+
+.size56 .css_char.exclam .line {
+  width: 16px;
+  height: 38px;
+}
+
+.size56 .css_char.question .line {
+  width: 16px;
+  height: 18px;
+  left: 10px;
+  top: 20px;
+}
+
+
+
+/********** font size 28 **********/
+
+
+.size28 .css_char {
+  height: 28px;
+  margin: 0 2px 4px 0;
+}
+
+.size28 .word { 
+  padding-right: 14px;
+}
+
+/***** A *****/
+
+.size28 .css_char.a {  width: 28px; }
+
+.size28 .css_char.a .outside { border-width: 0 14px 28px; }
+
+.size28 .css_char.a .inside {
+  border-width: 0 6px 12px;
+  top: 18px;
+  left: 8px
+}
+
+.size28 .css_char.a .bar {
+  width: 12px;
+  height: 4px;
+  top: 22px;
+  left: 8px;
+}
+
+/**** B *****/
+
+.size28 .css_char.b { width: 20px; }
+
+.size28 .css_char.b .top.fill,
+.size28 .css_char.b .bottom.fill {
+  width: 20px;
+  height: 18px;
+  border-width: 0px;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  -moz-border-radius-topright: 9px;
+  -moz-border-radius-bottomright: 9px;
+  -webkit-border-top-right-radius: 9px;
+  -webkit-border-bottom-right-radius: 9px;
+}
+.size28 .css_char.b .bottom.fill { top: 10px; }
+
+.size28 .css_char.b .top.neg,
+.size28 .css_char.b .bottom.neg {
+  width: 4px;
+  height: 3px;
+  left: 8px;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  -moz-border-radius-topright: 1px;
+  -moz-border-radius-bottomright: 1px;
+  -webkit-border-top-right-radius: 1px;
+  -webkit-border-bottom-right-radius: 1px;
+}
+.size28 .css_char.b .top.neg { top: 8px; }
+.size28 .css_char.b .bottom.neg { top: 17px; }
+
+
+/***** C, D, G, O & Q *****/
+
+.size28 .css_char.c,
+.size28 .css_char.o,
+.size28 .css_char.d,
+.size28 .css_char.g,
+.size28 .css_char.q {  width: 28px; }
+
+.size28 .css_char.c .stroke,
+.size28 .css_char.o .stroke,
+.size28 .css_char.d .stroke,
+.size28 .css_char.g .outside,
+.size28 .css_char.q .stroke {
+  width: 12px;
+  height: 12px;
+  border-width: 8px;
+  border-radius: 14px;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+}
+
+.size28 .css_char.d .stroke {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-top-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+}
+
+.size28 .css_char.c .neg,
+.size28 .css_char.g .neg {
+  width: 14px;
+  height: 4px;
+  top: 12px;
+  left: 14px;
+}
+
+
+
+.size28 .css_char.g .spur {
+  width: 4px;
+  border-width: 12px 0 0 6px;
+  top: 16px;
+  left: 18px;
+}
+
+.size28 .css_char.q .cross_left,
+.size28 .css_char.q .cross_right {
+  width: 0px;
+  top: 16px;
+}
+.size28 .css_char.q .cross_left {
+  border-width: 12px 0 0 6px;
+  left: 14px;
+}
+
+.size28 .css_char.q .cross_right {
+  border-width: 0 6px 12px 0;
+  left: 20px;
+}
+
+/***** E & F *****/
+
+.size28 .css_char.e, .size28 .css_char.f { width: 20px; }
+
+.size28 .css_char.e .stroke {
+  height: 12px;
+  width: 12px;
+  border-width: 8px 0 8px 8px;
+}
+
+.size28 .css_char.f .stroke {
+  height: 20px;
+  width: 12px;
+  border-width: 8px 0 0 8px;
+}
+
+.size28 .css_char.e .fill,
+.size28 .css_char.f .fill {
+  height: 6px;
+  width: 12px;
+  top: 11px;
+  left: 6px;
+}
+
+
+
+.size28 .css_char.v .inside,
+.size28 .css_char.w .inside_left { left: 8px; }
+
+.size28 .css_char.w .inside_right { left: 18px; }
+
+
+/***** H *****/
+
+.size28 .css_char.h { width: 20px; }
+
+.size28 .css_char.h .top,
+.size28 .css_char.h .bottom {
+  width: 4px;
+  height: 11px;
+}
+.size28 .css_char.h .top { border-width: 0 8px 4px; }
+.size28 .css_char.h .bottom {
+  border-width: 4px 8px 0;
+  top: 13px;
+}
+
+/***** I *****/
+
+.size28 .css_char.i { width: 8px; }
+
+.size28 .css_char.i .fill {
+  width: 8px;
+  height: 28px;
+}
+
+/***** U & J *****/
+
+.size28 .css_char.u,
+.size28 .css_char.j { width: 22px; }
+
+.size28 .css_char.u .stroke,
+.size28 .css_char.j .stroke {
+  width: 6px;
+  height: 20px;
+  border-width: 0 8px 8px;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  -moz-border-radius-bottomleft: 11px;
+  -moz-border-radius-bottomright: 11px;
+  -webkit-border-bottom-left-radius: 11px;
+  -webkit-border-bottom-right-radius: 11px;
+}
+
+.size28 .css_char.j .neg {
+  width: 12px;
+  height: 16px;
+  left: -2px;
+}
+
+/***** K *****/
+
+.size28 .css_char.k { width: 22px; }
+
+.size28 .css_char.k .split_vert {
+  width: 15px;
+  border-width: 14px 7px 14px 0;
+  left: 0px;
+}
+
+.size28 .css_char.k .split_horiz {
+  height: 8px;
+  border-width: 12px 6px 12px 0;
+  left: 8px;
+  top: -2px;
+}
+
+/***** L *****/
+
+.size28 .css_char.l { width: 20px; }
+
+.size28 .css_char.l .stroke {
+  width: 12px;
+  height: 20px;
+  border-width: 0 0 8px 8px;
+}
+
+
+
+/***** M *****/
+
+.size28 .css_char.m { width: 28px; }
+
+.size28 .css_char.m .split_horiz_pos {
+  height: 16px;
+  border-width: 14px 14px 0;
+}
+
+.size28 .css_char.m .split_horiz_neg {
+  height: 4px;
+  border-width: 6px 6px 0;
+  top: 19px;
+  left: 8px;
+}
+
+/***** N *****/
+
+.size28 .css_char.n { width: 24px; }
+
+.size28 .css_char.n .top_corner {
+  border-width: 0 20px 15px 0;
+  top: -3px;
+  left: -4px;
+}
+
+.size28 .css_char.n .bottom_corner {
+  border-width: 15px 0 0 20px;
+  top: 16px;
+  left: 8px;
+}
+
+.size28 .css_char.n .fill {
+  width: 24px;
+  height: 28px; 
+}
+
+  
+  
+/***** R  & P *****/
+
+.size28 .css_char.r { width: 21px; }
+.size28 .css_char.p { width: 20px; }
+
+.size28 .css_char.r .inside {
+  width: 2px;
+  border-width: 12px 0 0 6px;
+  top: 16px;
+  left:  6px;
+}
+
+.size28 .css_char.r .outside {
+  width: 2px;
+  border-width: 0 6px 12px 0px;
+  top: 16px;
+  left: 13px;
+}
+
+.size28 .css_char.r .stroke,
+.size28 .css_char.p .stroke {
+  width: 8px;
+  height: 4px;
+  border-width: 8px 8px 8px 0;
+  left: 4px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+}
+
+.size28 .css_char.r .fill,
+.size28 .css_char.p .fill {
+  width: 8px;
+  height: 28px;
+}
+
+/***** S & some of ? *****/
+
+.size28 .css_char.s,
+.size28 .css_char.question {
+  width: 18px;
+}
+
+.size28 .css_char.s .top_circle,
+.size28 .css_char.s .bottom_circle,
+.size28 .css_char.s .right .stroke,
+.size28 .css_char.question .stroke {
+  width: 2px;
+  height: 2px;
+  border-width: 8px;
+  border-radius: 9px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+}
+.size28 .css_char.s .top_circle { top: 0px; }
+.size28 .css_char.s .bottom_circle { top: 10px; }
+
+.size28 .css_char.s .left.neg,
+.size28 .css_char.s .right.neg,
+.size28 .css_char.question .neg {
+  width: 9px;
+  height: 10px;
+  top: 9px;
+}
+.size28 .css_char.s .right.neg { 
+  left: 9px;
+  overflow: hidden;
+}
+.size28 .css_char.s .right .stroke {
+  top: 1px;
+  left: -9px;
+}
+
+/***** T *****/
+
+.size28 .css_char.t { width: 20px; }
+
+.size28 .css_char.t .cross {
+  width: 20px;
+  height: 8px;
+}
+
+.size28 .css_char.t .stem {
+  width: 8px;
+  height: 24px;
+  left: 6px;
+  top: 4px;
+}
+
+/***** V & W *****/
+
+.size28 .css_char.v {  width: 28px; }
+
+.size28 .css_char.w {  width: 38px; }
+
+.size28 .css_char.v .outside,
+.size28 .css_char.w .outside_left,
+.size28 .css_char.w .outside_right { border-width: 28px 14px 0px; }
+
+.size28 .css_char.w .outside_right { left: 10px; }
+
+.size28 .css_char.v .inside,
+.size28 .css_char.w .inside_left,
+.size28 .css_char.w .inside_right { 
+  border-width: 12px 6px 0; 
+  top: -2px;
+}
+
+/***** X *****/
+
+.size28 .css_char.x { width: 26px; }
+
+.size28 .css_char.x .outside {
+  width: 10px;
+  border-width: 14px 8px;
+}
+
+.size28 .css_char.x .inside {
+  height: 16px;
+  border-width: 8px 4px;
+  left: 9px;
+  top: -2px;
+}
+
+
+
+/***** Y *****/
+
+.size28 .css_char.y {  width: 26px; }
+
+.size28 .css_char.y .outside { border-width: 26px 13px 0px; }
+
+.size28 .css_char.y .inside { 
+  border-width: 10px 5px 0; 
+  top: -2px;
+  left: 8px;
+}
+
+.size28 .css_char.y .fill {
+  width: 8px;
+  height: 12px;
+  left: 9px;
+  top: 16px;
+}
+
+
+
+/***** Z *****/
+
+.size28 .css_char.z { width: 24px; }
+
+.size28 .css_char.z .fill {
+  width: 24px;
+  height: 28px;
+}
+
+.size28 .css_char.z .left {
+  border-width: 24px 12px 0 0;
+  top: 8px;
+  left: -2px;
+}
+.size28 .css_char.z .right {
+  border-width: 0 0px 24px 12px;
+  top: -4px;
+  left: 14px;
+}
+
+/***** ., !, & ? *****/
+
+.size28 .css_char.period,
+.size28 .css_char.exclam { width: 8px; }
+
+.size28 .css_char.period .dot,
+.size28 .css_char.exclam .dot,
+.size28 .css_char.question .dot {
+  width: 8px;
+  height: 8px;
+  top: 20px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.size28 .css_char.question .dot { left: 5px;}
+
+.size28 .css_char.exclam .line {
+  width: 8px;
+  height: 19px;
+}
+
+.size28 .css_char.question .line {
+  width: 8px;
+  height: 9px;
+  left: 5px;
+  top: 10px;
+}
